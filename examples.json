@@ -1,0 +1,69 @@
+[
+  {
+    "label": "55 anos, estádio II, LDH normal: 0 ponto",
+    "input": {},
+    "expected": {
+      "score": 0,
+      "level": "low"
+    },
+    "originalInput": [],
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "70 anos, estádio IV, LDH alta: 3 pontos",
+    "input": {
+      "idade": true,
+      "estadio": true,
+      "ldh": true
+    },
+    "expected": {
+      "score": 3,
+      "level": "high",
+      "verdict": "alto-intermediário"
+    },
+    "originalInput": {
+      "idade": true,
+      "estadio": true,
+      "ldh": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "LDH alta e estádio III: 2 pontos",
+    "input": {
+      "ldh": true,
+      "estadio": true
+    },
+    "expected": {
+      "score": 2,
+      "level": "mid"
+    },
+    "originalInput": {
+      "ldh": true,
+      "estadio": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Todos os fatores: 5 pontos",
+    "input": {
+      "idade": true,
+      "ldh": true,
+      "ecog": true,
+      "estadio": true,
+      "extranodal": true
+    },
+    "expected": {
+      "score": 5,
+      "verdict": "Risco alto"
+    },
+    "originalInput": {
+      "idade": true,
+      "ldh": true,
+      "ecog": true,
+      "estadio": true,
+      "extranodal": true
+    },
+    "expandedZeroOptions": []
+  }
+]

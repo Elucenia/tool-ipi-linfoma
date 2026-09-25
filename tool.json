@@ -1,0 +1,268 @@
+{
+  "tool": {
+    "id": "ipi-linfoma",
+    "title": "IPI (Índice Prognóstico Internacional)",
+    "short": "Prognóstico do linfoma não Hodgkin agressivo",
+    "desc": "Índice Prognóstico Internacional (IPI) para linfoma não Hodgkin agressivo: 5 fatores, 4 grupos de risco com remissão completa e sobrevida.",
+    "lead": "Classifica o prognóstico do adulto com linfoma não Hodgkin agressivo (como o difuso de grandes células B) ao diagnóstico, antes do tratamento.",
+    "spec": [
+      "hematologia-e-hemoterapia",
+      "oncologia-clinica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "idade",
+        "Idade &gt; 60 anos",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "ldh",
+        "LDH sérica acima do limite superior normal",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "ecog",
+        "ECOG ≥ 2",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "estadio",
+        "Estádio de Ann Arbor III ou IV",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "extranodal",
+        "Mais de 1 sítio extranodal",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "score": {
+      "label": "IPI",
+      "unit": "",
+      "bands": [
+        [
+          0,
+          "low",
+          "Risco baixo: sobrevida em 5 anos de 73%",
+          "Remissão completa em 87% (era pré-rituximabe)."
+        ],
+        [
+          2,
+          "mid",
+          "Risco baixo-intermediário: sobrevida em 5 anos de 51%",
+          "Remissão completa em 67%."
+        ],
+        [
+          3,
+          "high",
+          "Risco alto-intermediário: sobrevida em 5 anos de 43%",
+          "Remissão completa em 55%."
+        ],
+        [
+          4,
+          "high",
+          "Risco alto: sobrevida em 5 anos de 26%",
+          "Remissão completa em 44%."
+        ]
+      ]
+    },
+    "formula": "<p>Um ponto para cada fator: idade &gt; 60 anos · LDH elevada · ECOG ≥ 2 · estádio III ou IV · mais de 1 sítio extranodal. Máximo: 5.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Grupo",
+        "Remissão completa",
+        "Sobrevida global em 5 anos"
+      ],
+      [
+        "0–1",
+        "Baixo",
+        "87%",
+        "73%"
+      ],
+      [
+        "2",
+        "Baixo-intermediário",
+        "67%",
+        "51%"
+      ],
+      [
+        "3",
+        "Alto-intermediário",
+        "55%",
+        "43%"
+      ],
+      [
+        "4–5",
+        "Alto",
+        "44%",
+        "26%"
+      ]
+    ],
+    "table_note": "Números do estudo original (quimioterapia com doxorrubicina, antes do rituximabe). Com R-CHOP, a sobrevida é maior em todos os grupos, mas o IPI continua separando o prognóstico.",
+    "tips": [
+      "O IPI é para linfoma agressivo; o folicular tem índice próprio (FLIPI) e o Hodgkin, o IPS de Hasenclever.",
+      "Em pacientes com 60 anos ou menos, use o IPI ajustado para idade (LDH, ECOG e estádio), que foi descrito no mesmo artigo.",
+      "O NCCN-IPI (com LDH normalizada e sítios extranodais específicos) discrimina melhor na era do rituximabe.",
+      "Registre o IPI ao diagnóstico: ele entra nos critérios de inclusão de ensaios clínicos e nas decisões de profilaxia do SNC (CNS-IPI)."
+    ],
+    "sources": [
+      [
+        "The International Non-Hodgkin's Lymphoma Prognostic Factors Project. A predictive model for aggressive non-Hodgkin's lymphoma. N Engl J Med, 1993.",
+        "https://doi.org/10.1056/NEJM199309303291402"
+      ]
+    ],
+    "cases": [
+      [
+        "55 anos, estádio II, LDH normal: 0 ponto",
+        [],
+        {
+          "score": 0,
+          "level": "low"
+        }
+      ],
+      [
+        "70 anos, estádio IV, LDH alta: 3 pontos",
+        {
+          "idade": true,
+          "estadio": true,
+          "ldh": true
+        },
+        {
+          "score": 3,
+          "level": "high",
+          "verdict": "alto-intermediário"
+        }
+      ],
+      [
+        "LDH alta e estádio III: 2 pontos",
+        {
+          "ldh": true,
+          "estadio": true
+        },
+        {
+          "score": 2,
+          "level": "mid"
+        }
+      ],
+      [
+        "Todos os fatores: 5 pontos",
+        {
+          "idade": true,
+          "ldh": true,
+          "ecog": true,
+          "estadio": true,
+          "extranodal": true
+        },
+        {
+          "score": 5,
+          "verdict": "Risco alto"
+        }
+      ]
+    ],
+    "batch": "onco-diagnostico",
+    "kind": "Escore",
+    "config": {
+      "unit": "",
+      "label": "IPI",
+      "fields": [
+        [
+          "idade",
+          "chk",
+          1
+        ],
+        [
+          "ldh",
+          "chk",
+          1
+        ],
+        [
+          "ecog",
+          "chk",
+          1
+        ],
+        [
+          "estadio",
+          "chk",
+          1
+        ],
+        [
+          "extranodal",
+          "chk",
+          1
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Risco baixo: sobrevida em 5 anos de 73%",
+          "Remissão completa em 87% (era pré-rituximabe)."
+        ],
+        [
+          2,
+          "mid",
+          "Risco baixo-intermediário: sobrevida em 5 anos de 51%",
+          "Remissão completa em 67%."
+        ],
+        [
+          3,
+          "high",
+          "Risco alto-intermediário: sobrevida em 5 anos de 43%",
+          "Remissão completa em 55%."
+        ],
+        [
+          4,
+          "high",
+          "Risco alto: sobrevida em 5 anos de 26%",
+          "Remissão completa em 44%."
+        ]
+      ]
+    },
+    "areaId": "onco-diagnostico",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/onco-diagnostico.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/onco-diagnostico.php",
+    "sha256": "29e7fd6aab1f8bf937a34267255855c21f804696da2b4817d6197578cdcbe743",
+    "bytes": 78570
+  },
+  "clinicalValidation": "not-performed"
+}
