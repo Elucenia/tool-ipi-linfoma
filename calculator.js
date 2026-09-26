@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-ipi-linfoma · Elucenia · https://github.com/Elucenia/tool-ipi-linfoma
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"ipi-linfoma","title":"IPI (Índice Prognóstico Internacional)","fields":[["idade","Idade &gt; 60 anos","chk",{"pts":1}],["ldh","LDH sérica acima do limite superior normal","chk",{"pts":1}],["ecog","ECOG ≥ 2","chk",{"pts":1}],["estadio","Estádio de Ann Arbor III ou IV","chk",{"pts":1}],["extranodal","Mais de 1 sítio extranodal","chk",{"pts":1}]],"config":{"unit":"","label":"IPI","fields":[["idade","chk",1],["ldh","chk",1],["ecog","chk",1],["estadio","chk",1],["extranodal","chk",1]],"bands":[[0,"low","Risco baixo: sobrevida em 5 anos de 73%","Remissão completa em 87% (era pré-rituximabe)."],[2,"mid","Risco baixo-intermediário: sobrevida em 5 anos de 51%","Remissão completa em 67%."],[3,"high","Risco alto-intermediário: sobrevida em 5 anos de 43%","Remissão completa em 55%."],[4,"high","Risco alto: sobrevida em 5 anos de 26%","Remissão completa em 44%."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
