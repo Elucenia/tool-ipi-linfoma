@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-ipi-linfoma",
   "version": "0.1.0",
-  "description": "IPI (Índice Prognóstico Internacional) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "IPI (Índice Prognóstico Internacional) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
