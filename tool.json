@@ -5,123 +5,44 @@
     "short": "Prognóstico do linfoma não Hodgkin agressivo",
     "desc": "Índice Prognóstico Internacional (IPI) para linfoma não Hodgkin agressivo: 5 fatores, 4 grupos de risco com remissão completa e sobrevida.",
     "lead": "Classifica o prognóstico do adulto com linfoma não Hodgkin agressivo (como o difuso de grandes células B) ao diagnóstico, antes do tratamento.",
+    "kind": "Escore",
     "spec": [
       "hematologia-e-hemoterapia",
       "oncologia-clinica"
     ],
-    "tier": 1,
     "fields": [
       [
         "idade",
         "Idade &gt; 60 anos",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "ldh",
         "LDH sérica acima do limite superior normal",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "ecog",
         "ECOG ≥ 2",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "estadio",
         "Estádio de Ann Arbor III ou IV",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "extranodal",
         "Mais de 1 sítio extranodal",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "IPI",
-      "unit": "",
-      "bands": [
-        [
-          0,
-          "low",
-          "Risco baixo: sobrevida em 5 anos de 73%",
-          "Remissão completa em 87% (era pré-rituximabe)."
-        ],
-        [
-          2,
-          "mid",
-          "Risco baixo-intermediário: sobrevida em 5 anos de 51%",
-          "Remissão completa em 67%."
-        ],
-        [
-          3,
-          "high",
-          "Risco alto-intermediário: sobrevida em 5 anos de 43%",
-          "Remissão completa em 55%."
-        ],
-        [
-          4,
-          "high",
-          "Risco alto: sobrevida em 5 anos de 26%",
-          "Remissão completa em 44%."
-        ]
-      ]
-    },
     "formula": "<p>Um ponto para cada fator: idade &gt; 60 anos · LDH elevada · ECOG ≥ 2 · estádio III ou IV · mais de 1 sítio extranodal. Máximo: 5.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Grupo",
-        "Remissão completa",
-        "Sobrevida global em 5 anos"
-      ],
-      [
-        "0–1",
-        "Baixo",
-        "87%",
-        "73%"
-      ],
-      [
-        "2",
-        "Baixo-intermediário",
-        "67%",
-        "51%"
-      ],
-      [
-        "3",
-        "Alto-intermediário",
-        "55%",
-        "43%"
-      ],
-      [
-        "4–5",
-        "Alto",
-        "44%",
-        "26%"
-      ]
-    ],
-    "table_note": "Números do estudo original (quimioterapia com doxorrubicina, antes do rituximabe). Com R-CHOP, a sobrevida é maior em todos os grupos, mas o IPI continua separando o prognóstico.",
-    "tips": [
-      "O IPI é para linfoma agressivo; o folicular tem índice próprio (FLIPI) e o Hodgkin, o IPS de Hasenclever.",
-      "Em pacientes com 60 anos ou menos, use o IPI ajustado para idade (LDH, ECOG e estádio), que foi descrito no mesmo artigo.",
-      "O NCCN-IPI (com LDH normalizada e sítios extranodais específicos) discrimina melhor na era do rituximabe.",
-      "Registre o IPI ao diagnóstico: ele entra nos critérios de inclusão de ensaios clínicos e nas decisões de profilaxia do SNC (CNS-IPI)."
-    ],
     "sources": [
       [
         "The International Non-Hodgkin's Lymphoma Prognostic Factors Project. A predictive model for aggressive non-Hodgkin's lymphoma. N Engl J Med, 1993.",
@@ -176,65 +97,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "",
-      "label": "IPI",
-      "fields": [
-        [
-          "idade",
-          "chk",
-          1
-        ],
-        [
-          "ldh",
-          "chk",
-          1
-        ],
-        [
-          "ecog",
-          "chk",
-          1
-        ],
-        [
-          "estadio",
-          "chk",
-          1
-        ],
-        [
-          "extranodal",
-          "chk",
-          1
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Risco baixo: sobrevida em 5 anos de 73%",
-          "Remissão completa em 87% (era pré-rituximabe)."
-        ],
-        [
-          2,
-          "mid",
-          "Risco baixo-intermediário: sobrevida em 5 anos de 51%",
-          "Remissão completa em 67%."
-        ],
-        [
-          3,
-          "high",
-          "Risco alto-intermediário: sobrevida em 5 anos de 43%",
-          "Remissão completa em 55%."
-        ],
-        [
-          4,
-          "high",
-          "Risco alto: sobrevida em 5 anos de 26%",
-          "Remissão completa em 44%."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -243,17 +105,178 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T13:08:00.439Z",
+      "total": 32,
+      "passed": 32,
+      "evidencePath": "reports/review-20261003/eight-additive-source-oracles-final23.json",
+      "evidenceSha256": "52360ca4cccc7b095b0de3b199fffda2e646b7a4dc92f325aa71eec61c4c7dfe",
+      "peerEvidencePath": "reports/review-20261003/eight-additive-source-oracles-independent-review-final23.json",
+      "peerEvidenceSha256": "64ff546626e0559b4f05f5eceb47e9cae355bfe7bc67f82744dbc3db60644f14",
+      "scope": "Entered discrete-point sum/count only. Original/full method conformance, input clinical adjudication, diagnostic/management decisions, prognosis, professional translations, rights and release approval are outside this test. Source-access and variant limits are retained.",
+      "source": {
+        "keys": [
+          "idade",
+          "ldh",
+          "ecog",
+          "estadio",
+          "extranodal"
+        ],
+        "kind": "boolean",
+        "domain": [
+          false,
+          true
+        ],
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3006126/",
+        "edition": "Primary adaptive-index model research2011, corroborating IPI point definition; original Project1993 DOI10.1056/NEJM199309303291402",
+        "locator": "Primary study IPI specification: one point for each of five factors; original1993 abstract lists same five dimensions",
+        "access": "Primary research indexed scoring statement and original1993 primary abstract read2026-10-04; direct article retrieval returned a browser check. Original1993 full protocol not read. Count five entered classified factor booleans only; not clinical factor selection, age-adjusted IPI, NCCN-IPI, prognosis or risk-category approval.",
+        "corroboration": "https://pubmed.ncbi.nlm.nih.gov/8141877/"
+      },
+      "implementations": [
+        {
+          "app": "website",
+          "id": "ipi-linfoma",
+          "sha256": "7bf0f83fed1b7c0d81ff4a0750aa02d4347df3c6e81ae3ee6351b9fe13f4495a"
+        },
+        {
+          "app": "dashboard",
+          "id": "ipi-linfoma",
+          "sha256": "7bf0f83fed1b7c0d81ff4a0750aa02d4347df3c6e81ae3ee6351b9fe13f4495a"
+        },
+        {
+          "app": "command-center",
+          "id": "ipi-linfoma",
+          "sha256": "7bf0f83fed1b7c0d81ff4a0750aa02d4347df3c6e81ae3ee6351b9fe13f4495a"
+        }
+      ],
+      "qualifications": [],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "International Prognostic Index 1993:5 fatores 0–5; sem NCCNIPI ou RIPI",
+    "implementationVersion": "ipi-linfoma@native-2026-10-03+7bf0f83fed1b",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/8141877/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Um ponto para cada fator: idade > 60 anos · LDH elevada · ECOG ≥ 2 · estádio III ou IV · mais de 1 sítio extranodal. Máximo: 5.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "idade",
+            "label": "Idade &gt; 60 anos",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ldh",
+            "label": "LDH sérica acima do limite superior normal",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ecog",
+            "label": "ECOG ≥ 2",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "estadio",
+            "label": "Estádio de Ann Arbor III ou IV",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "extranodal",
+            "label": "Mais de 1 sítio extranodal",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "ed17dc992b7bfc5d38dd9dc49d55bbf1eedd8d28dc9b13a08eef1e3aa735db14"
+      },
+      "sourceEditions": [
+        {
+          "citation": "The International Non-Hodgkin's Lymphoma Prognostic Factors Project. A predictive model for aggressive non-Hodgkin's lymphoma. N Engl J Med, 1993.",
+          "url": "https://doi.org/10.1056/NEJM199309303291402",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A predictive model for aggressive non-Hodgkin's lymphoma.",
+            "year": "1993",
+            "firstPublicationDate": "1993-09-01",
+            "doi": "10.1056/nejm199309303291402",
+            "pmid": "8141877",
+            "journal": "The New England journal of medicine",
+            "authors": "International Non-Hodgkin's Lymphoma Prognostic Factors Project."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/8141877/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "d7433cf58bd3cbe96f82285464bb56b860d66a9f4e81e9db1826a8d70ba9407a",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T13:08:00.439Z",
+        "total": 32,
+        "passed": 32,
+        "evidencePath": "reports/review-20261003/eight-additive-source-oracles-final23.json",
+        "scope": "Entered discrete-point sum/count only. Original/full method conformance, input clinical adjudication, diagnostic/management decisions, prognosis, professional translations, rights and release approval are outside this test. Source-access and variant limits are retained.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "581797478e12edf55e06f0a90d4762308794ad2db2b152642cd9b51b3037c733"
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "7bf0f83fed1b7c0d81ff4a0750aa02d4347df3c6e81ae3ee6351b9fe13f4495a"
+    },
+    "limits": "Índice prognóstico clássico para adultos com linfoma não Hodgkin agressivo, desenvolvido antes do tratamento em coortes históricas com doxorrubicina. Distinga IPI clássico, ajustado à idade, R-IPI e NCCN-IPI. As probabilidades históricas não demonstram calibração para todos os subtipos ou tratamentos atuais.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.064Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Tabela completa de cortes/pesos e validações contemporâneas não foram lidas integralmente."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/ipi-linfoma/calculator.js",
+    "bytes": 4854,
+    "sha256": "7bf0f83fed1b7c0d81ff4a0750aa02d4347df3c6e81ae3ee6351b9fe13f4495a"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "9cc2c31513c891c6b60885d7a4d85fe4d6d9bf5909a5c84997a2a1563dea6a3c",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 32,
+      "sha256": "df068ca106ad497b1a0c7a1a2fe7738b688618730a0ea52c1f29161b57a0cb7a",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

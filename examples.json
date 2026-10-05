@@ -1,51 +1,132 @@
 [
   {
-    "label": "55 anos, estádio II, LDH normal: 0 ponto",
-    "input": {},
+    "id": "ipi-linfoma",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "55 anos, estádio II, LDH normal: 0 ponto",
+    "originalInput": [],
+    "input": {
+      "idade": false,
+      "ldh": false,
+      "ecog": false,
+      "estadio": false,
+      "extranodal": false
+    },
     "expected": {
       "score": 0,
       "level": "low"
     },
-    "originalInput": [],
-    "expandedZeroOptions": []
+    "recordedResult": {
+      "main": [
+        "0",
+        "pontos"
+      ],
+      "label": "IPI",
+      "raw": {
+        "score": 0
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "70 anos, estádio IV, LDH alta: 3 pontos",
-    "input": {
+    "id": "ipi-linfoma",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "70 anos, estádio IV, LDH alta: 3 pontos",
+    "originalInput": {
       "idade": true,
       "estadio": true,
       "ldh": true
+    },
+    "input": {
+      "idade": true,
+      "estadio": true,
+      "ldh": true,
+      "ecog": false,
+      "extranodal": false
     },
     "expected": {
       "score": 3,
       "level": "high",
       "verdict": "alto-intermediário"
     },
-    "originalInput": {
-      "idade": true,
-      "estadio": true,
-      "ldh": true
+    "recordedResult": {
+      "main": [
+        "3",
+        "pontos"
+      ],
+      "label": "IPI",
+      "raw": {
+        "score": 3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "LDH alta e estádio III: 2 pontos",
-    "input": {
+    "id": "ipi-linfoma",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "LDH alta e estádio III: 2 pontos",
+    "originalInput": {
       "ldh": true,
       "estadio": true
+    },
+    "input": {
+      "ldh": true,
+      "estadio": true,
+      "idade": false,
+      "ecog": false,
+      "extranodal": false
     },
     "expected": {
       "score": 2,
       "level": "mid"
     },
-    "originalInput": {
-      "ldh": true,
-      "estadio": true
+    "recordedResult": {
+      "main": [
+        "2",
+        "pontos"
+      ],
+      "label": "IPI",
+      "raw": {
+        "score": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Todos os fatores: 5 pontos",
+    "id": "ipi-linfoma",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Todos os fatores: 5 pontos",
+    "originalInput": {
+      "idade": true,
+      "ldh": true,
+      "ecog": true,
+      "estadio": true,
+      "extranodal": true
+    },
     "input": {
       "idade": true,
       "ldh": true,
@@ -57,13 +138,23 @@
       "score": 5,
       "verdict": "Risco alto"
     },
-    "originalInput": {
-      "idade": true,
-      "ldh": true,
-      "ecog": true,
-      "estadio": true,
-      "extranodal": true
+    "recordedResult": {
+      "main": [
+        "5",
+        "pontos"
+      ],
+      "label": "IPI",
+      "raw": {
+        "score": 5
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

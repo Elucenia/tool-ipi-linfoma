@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean idade",
+    "input": {
+      "idade": "2",
+      "ldh": false,
+      "ecog": false,
+      "estadio": false,
+      "extranodal": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean ldh",
+    "input": {
+      "idade": false,
+      "ldh": "2",
+      "ecog": false,
+      "estadio": false,
+      "extranodal": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ldh"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean ecog",
+    "input": {
+      "idade": false,
+      "ldh": false,
+      "ecog": "2",
+      "estadio": false,
+      "extranodal": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ecog"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean estadio",
+    "input": {
+      "idade": false,
+      "ldh": false,
+      "ecog": false,
+      "estadio": "2",
+      "extranodal": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "estadio"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean extranodal",
+    "input": {
+      "idade": false,
+      "ldh": false,
+      "ecog": false,
+      "estadio": false,
+      "extranodal": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "extranodal"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
