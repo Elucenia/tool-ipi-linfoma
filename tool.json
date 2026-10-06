@@ -158,7 +158,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "International Prognostic Index 1993:5 fatores 0–5; sem NCCNIPI ou RIPI",
-    "implementationVersion": "ipi-linfoma@native-2026-10-03+7bf0f83fed1b",
+    "implementationVersion": "ipi-linfoma@native-2026-10-05+4153b72e0644",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/8141877/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -246,7 +246,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "7bf0f83fed1b7c0d81ff4a0750aa02d4347df3c6e81ae3ee6351b9fe13f4495a"
+      "implementationHash": "4153b72e06443d7d439e27c196c95c5949a464ad50afe1a7ec045040b09f87f2",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "ipi-linfoma@native-2026-10-03+7bf0f83fed1b",
+          "previousImplementationHash": "7bf0f83fed1b7c0d81ff4a0750aa02d4347df3c6e81ae3ee6351b9fe13f4495a",
+          "implementationHash": "4153b72e06443d7d439e27c196c95c5949a464ad50afe1a7ec045040b09f87f2",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "ed17dc992b7bfc5d38dd9dc49d55bbf1eedd8d28dc9b13a08eef1e3aa735db14",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Índice prognóstico clássico para adultos com linfoma não Hodgkin agressivo, desenvolvido antes do tratamento em coortes históricas com doxorrubicina. Distinga IPI clássico, ajustado à idade, R-IPI e NCCN-IPI. As probabilidades históricas não demonstram calibração para todos os subtipos ou tratamentos atuais.",
     "sourceLimitEvidence": {
@@ -265,15 +293,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/ipi-linfoma/calculator.js",
-    "bytes": 4854,
-    "sha256": "7bf0f83fed1b7c0d81ff4a0750aa02d4347df3c6e81ae3ee6351b9fe13f4495a"
+    "bytes": 5059,
+    "sha256": "4153b72e06443d7d439e27c196c95c5949a464ad50afe1a7ec045040b09f87f2"
   },
-  "sourceToolSha256": "9cc2c31513c891c6b60885d7a4d85fe4d6d9bf5909a5c84997a2a1563dea6a3c",
+  "sourceToolSha256": "d76415ce2dbf9e8af9607cd8da3b21f441c28f3c9b24ae4aadfd0f862ca33251",
   "omittedFullReferenceBanks": [
     {
       "rows": 32,
       "sha256": "df068ca106ad497b1a0c7a1a2fe7738b688618730a0ea52c1f29161b57a0cb7a",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

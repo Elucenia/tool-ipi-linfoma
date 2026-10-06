@@ -1,0 +1,707 @@
+{
+  "id": "ipi-linfoma",
+  "implementationVersion": "ipi-linfoma@native-2026-10-05+4153b72e0644",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "55 anos, estádio II, LDH normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risco baixo: sobrevida em 5 anos de 73%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Remissão completa em 87% (era pré-rituximabe).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, estádio IV, LDH alta: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risco alto-intermediário: sobrevida em 5 anos de 43%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Remissão completa em 55%.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "LDH alta e estádio III: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risco baixo-intermediário: sobrevida em 5 anos de 51%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Remissão completa em 67%.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risco alto: sobrevida em 5 anos de 26%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Remissão completa em 44%.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "55 anos, estádio II, LDH normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Low risk: 5-year survival of 73%",
+            "locale": "en",
+            "template": "documented-authored-b42e7a00f1d56ea0295f"
+          },
+          "note": {
+            "text": "Complete remission in 87% (pre-rituximab era).",
+            "locale": "en",
+            "template": "documented-authored-276936909e098aebc1e2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, estádio IV, LDH alta: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High-intermediate risk: 5-year survival of 43%",
+            "locale": "en",
+            "template": "documented-authored-2f8a04cffa11e10dd561"
+          },
+          "note": {
+            "text": "Complete remission in 55%.",
+            "locale": "en",
+            "template": "documented-authored-432ae0cd1791b78a777a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "LDH alta e estádio III: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Low-intermediate risk: 5-year survival of 51%",
+            "locale": "en",
+            "template": "documented-authored-f800a832c2754e6bd446"
+          },
+          "note": {
+            "text": "Complete remission in 67%.",
+            "locale": "en",
+            "template": "documented-authored-007b45908a8c33353341"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High risk: 5-year survival of 26%",
+            "locale": "en",
+            "template": "documented-authored-c0c252bb4a7096b56cc3"
+          },
+          "note": {
+            "text": "Complete remission in 44%.",
+            "locale": "en",
+            "template": "documented-authored-eb3e2234c16e01797ce2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "55 anos, estádio II, LDH normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Riesgo bajo: supervivencia a 5 años del 73%",
+            "locale": "es",
+            "template": "documented-authored-b42e7a00f1d56ea0295f"
+          },
+          "note": {
+            "text": "Remisión completa en 87% (era pre-rituximab).",
+            "locale": "es",
+            "template": "documented-authored-276936909e098aebc1e2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, estádio IV, LDH alta: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Riesgo alto-intermedio: supervivencia a 5 años del 43%",
+            "locale": "es",
+            "template": "documented-authored-2f8a04cffa11e10dd561"
+          },
+          "note": {
+            "text": "Remisión completa en 55%.",
+            "locale": "es",
+            "template": "documented-authored-432ae0cd1791b78a777a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "LDH alta e estádio III: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Riesgo bajo-intermedio: supervivencia a 5 años del 51%",
+            "locale": "es",
+            "template": "documented-authored-f800a832c2754e6bd446"
+          },
+          "note": {
+            "text": "Remisión completa en 67%.",
+            "locale": "es",
+            "template": "documented-authored-007b45908a8c33353341"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Riesgo alto: supervivencia a 5 años del 26%",
+            "locale": "es",
+            "template": "documented-authored-c0c252bb4a7096b56cc3"
+          },
+          "note": {
+            "text": "Remisión completa en 44%.",
+            "locale": "es",
+            "template": "documented-authored-eb3e2234c16e01797ce2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "55 anos, estádio II, LDH normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque faible : survie à 5 ans de 73%",
+            "locale": "fr",
+            "template": "documented-authored-b42e7a00f1d56ea0295f"
+          },
+          "note": {
+            "text": "Rémission complète dans 87% des cas (ère pré-rituximab).",
+            "locale": "fr",
+            "template": "documented-authored-276936909e098aebc1e2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, estádio IV, LDH alta: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque intermédiaire élevé : survie à 5 ans de 43%",
+            "locale": "fr",
+            "template": "documented-authored-2f8a04cffa11e10dd561"
+          },
+          "note": {
+            "text": "Rémission complète dans 55%.",
+            "locale": "fr",
+            "template": "documented-authored-432ae0cd1791b78a777a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "LDH alta e estádio III: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque intermédiaire faible : survie à 5 ans de 51%",
+            "locale": "fr",
+            "template": "documented-authored-f800a832c2754e6bd446"
+          },
+          "note": {
+            "text": "Rémission complète dans 67%.",
+            "locale": "fr",
+            "template": "documented-authored-007b45908a8c33353341"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque élevé : survie à 5 ans de 26%",
+            "locale": "fr",
+            "template": "documented-authored-c0c252bb4a7096b56cc3"
+          },
+          "note": {
+            "text": "Rémission complète dans 44%.",
+            "locale": "fr",
+            "template": "documented-authored-eb3e2234c16e01797ce2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "55 anos, estádio II, LDH normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Niedriges Risiko: 5-Jahres-Überleben von 73%",
+            "locale": "de",
+            "template": "documented-authored-b42e7a00f1d56ea0295f"
+          },
+          "note": {
+            "text": "Komplette Remission in 87% (prä-Rituximab-Ära).",
+            "locale": "de",
+            "template": "documented-authored-276936909e098aebc1e2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, estádio IV, LDH alta: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hohes intermediäres Risiko: 5-Jahres-Überleben von 43%",
+            "locale": "de",
+            "template": "documented-authored-2f8a04cffa11e10dd561"
+          },
+          "note": {
+            "text": "Komplette Remission in 55%.",
+            "locale": "de",
+            "template": "documented-authored-432ae0cd1791b78a777a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "LDH alta e estádio III: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Niedriges intermediäres Risiko: 5-Jahres-Überleben von 51%",
+            "locale": "de",
+            "template": "documented-authored-f800a832c2754e6bd446"
+          },
+          "note": {
+            "text": "Komplette Remission in 67%.",
+            "locale": "de",
+            "template": "documented-authored-007b45908a8c33353341"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hohes Risiko: 5-Jahres-Überleben von 26%",
+            "locale": "de",
+            "template": "documented-authored-c0c252bb4a7096b56cc3"
+          },
+          "note": {
+            "text": "Komplette Remission in 44%.",
+            "locale": "de",
+            "template": "documented-authored-eb3e2234c16e01797ce2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "55 anos, estádio II, LDH normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio basso: sopravvivenza a 5 anni del 73%",
+            "locale": "it",
+            "template": "documented-authored-b42e7a00f1d56ea0295f"
+          },
+          "note": {
+            "text": "Remissione completa nell'87% (era pre-rituximab).",
+            "locale": "it",
+            "template": "documented-authored-276936909e098aebc1e2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, estádio IV, LDH alta: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio intermedio-alto: sopravvivenza a 5 anni del 43%",
+            "locale": "it",
+            "template": "documented-authored-2f8a04cffa11e10dd561"
+          },
+          "note": {
+            "text": "Remissione completa nel 55%.",
+            "locale": "it",
+            "template": "documented-authored-432ae0cd1791b78a777a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "LDH alta e estádio III: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio intermedio-basso: sopravvivenza a 5 anni del 51%",
+            "locale": "it",
+            "template": "documented-authored-f800a832c2754e6bd446"
+          },
+          "note": {
+            "text": "Remissione completa nel 67%.",
+            "locale": "it",
+            "template": "documented-authored-007b45908a8c33353341"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio alto: sopravvivenza a 5 anni del 26%",
+            "locale": "it",
+            "template": "documented-authored-c0c252bb4a7096b56cc3"
+          },
+          "note": {
+            "text": "Remissione completa nel 44%.",
+            "locale": "it",
+            "template": "documented-authored-eb3e2234c16e01797ce2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "55 anos, estádio II, LDH normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطورة منخفضة: بقاء على قيد الحياة لمدة 5 سنوات بنسبة 73%",
+            "locale": "ar",
+            "template": "documented-authored-b42e7a00f1d56ea0295f"
+          },
+          "note": {
+            "text": "هدأة كاملة في 87% (ما قبل عصر الريتوكسيماب).",
+            "locale": "ar",
+            "template": "documented-authored-276936909e098aebc1e2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, estádio IV, LDH alta: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطورة متوسطة-مرتفعة: بقاء على قيد الحياة لمدة 5 سنوات بنسبة 43%",
+            "locale": "ar",
+            "template": "documented-authored-2f8a04cffa11e10dd561"
+          },
+          "note": {
+            "text": "هدأة كاملة في 55%.",
+            "locale": "ar",
+            "template": "documented-authored-432ae0cd1791b78a777a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "LDH alta e estádio III: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطورة منخفضة-متوسطة: بقاء على قيد الحياة لمدة 5 سنوات بنسبة 51%",
+            "locale": "ar",
+            "template": "documented-authored-f800a832c2754e6bd446"
+          },
+          "note": {
+            "text": "هدأة كاملة في 67%.",
+            "locale": "ar",
+            "template": "documented-authored-007b45908a8c33353341"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطورة عالية: بقاء على قيد الحياة لمدة 5 سنوات بنسبة 26%",
+            "locale": "ar",
+            "template": "documented-authored-c0c252bb4a7096b56cc3"
+          },
+          "note": {
+            "text": "هدأة كاملة في 44%.",
+            "locale": "ar",
+            "template": "documented-authored-eb3e2234c16e01797ce2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "55 anos, estádio II, LDH normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低风险：5年生存率为73%",
+            "locale": "zh",
+            "template": "documented-authored-b42e7a00f1d56ea0295f"
+          },
+          "note": {
+            "text": "87% 完全缓解（利妥昔单抗前时代）。",
+            "locale": "zh",
+            "template": "documented-authored-276936909e098aebc1e2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, estádio IV, LDH alta: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高中间风险：5年生存率为43%",
+            "locale": "zh",
+            "template": "documented-authored-2f8a04cffa11e10dd561"
+          },
+          "note": {
+            "text": "55% 完全缓解。",
+            "locale": "zh",
+            "template": "documented-authored-432ae0cd1791b78a777a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "LDH alta e estádio III: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低中间风险：5年生存率为51%",
+            "locale": "zh",
+            "template": "documented-authored-f800a832c2754e6bd446"
+          },
+          "note": {
+            "text": "67% 完全缓解。",
+            "locale": "zh",
+            "template": "documented-authored-007b45908a8c33353341"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高风险：5年生存率为26%",
+            "locale": "zh",
+            "template": "documented-authored-c0c252bb4a7096b56cc3"
+          },
+          "note": {
+            "text": "44% 完全缓解。",
+            "locale": "zh",
+            "template": "documented-authored-eb3e2234c16e01797ce2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "55 anos, estádio II, LDH normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低リスク：5年生存率73%",
+            "locale": "ja",
+            "template": "documented-authored-b42e7a00f1d56ea0295f"
+          },
+          "note": {
+            "text": "87%で完全寛解（リツキシマブ前の時代）。",
+            "locale": "ja",
+            "template": "documented-authored-276936909e098aebc1e2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, estádio IV, LDH alta: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高中間リスク：5年生存率43%",
+            "locale": "ja",
+            "template": "documented-authored-2f8a04cffa11e10dd561"
+          },
+          "note": {
+            "text": "55%で完全寛解。",
+            "locale": "ja",
+            "template": "documented-authored-432ae0cd1791b78a777a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "LDH alta e estádio III: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低中間リスク：5年生存率51%",
+            "locale": "ja",
+            "template": "documented-authored-f800a832c2754e6bd446"
+          },
+          "note": {
+            "text": "67%で完全寛解。",
+            "locale": "ja",
+            "template": "documented-authored-007b45908a8c33353341"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高リスク：5年生存率26%",
+            "locale": "ja",
+            "template": "documented-authored-c0c252bb4a7096b56cc3"
+          },
+          "note": {
+            "text": "44%で完全寛解。",
+            "locale": "ja",
+            "template": "documented-authored-eb3e2234c16e01797ce2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "55 anos, estádio II, LDH normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "कम जोखिम: 5 वर्ष का जीवित रहना 73%",
+            "locale": "hi",
+            "template": "documented-authored-b42e7a00f1d56ea0295f"
+          },
+          "note": {
+            "text": "87% में पूर्ण छूट (रिटुक्सिमैब-पूर्व युग)।",
+            "locale": "hi",
+            "template": "documented-authored-276936909e098aebc1e2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, estádio IV, LDH alta: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "उच्च-मध्यवर्ती जोखिम: 5 वर्ष का जीवित रहना 43%",
+            "locale": "hi",
+            "template": "documented-authored-2f8a04cffa11e10dd561"
+          },
+          "note": {
+            "text": "55% में पूर्ण छूट।",
+            "locale": "hi",
+            "template": "documented-authored-432ae0cd1791b78a777a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "LDH alta e estádio III: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "निम्न-मध्यवर्ती जोखिम: 5 वर्ष का जीवित रहना 51%",
+            "locale": "hi",
+            "template": "documented-authored-f800a832c2754e6bd446"
+          },
+          "note": {
+            "text": "67% में पूर्ण छूट।",
+            "locale": "hi",
+            "template": "documented-authored-007b45908a8c33353341"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores: 5 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "उच्च जोखिम: 5 वर्ष का जीवित रहना 26%",
+            "locale": "hi",
+            "template": "documented-authored-c0c252bb4a7096b56cc3"
+          },
+          "note": {
+            "text": "44% में पूर्ण छूट।",
+            "locale": "hi",
+            "template": "documented-authored-eb3e2234c16e01797ce2"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

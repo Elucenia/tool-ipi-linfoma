@@ -71,3 +71,35 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Risque faible : survie à 5 ans de 73%
+
+Rémission complète dans 87% des cas (ère pré-rituximab).
+
+
+### 2
+
+Risque intermédiaire élevé : survie à 5 ans de 43%
+
+Rémission complète dans 55%.
+
+
+### 3
+
+Risque intermédiaire faible : survie à 5 ans de 51%
+
+Rémission complète dans 67%.
+
+
+### 4
+
+Risque élevé : survie à 5 ans de 26%
+
+Rémission complète dans 44%.
+

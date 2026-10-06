@@ -71,3 +71,35 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Risco baixo: sobrevida em 5 anos de 73%
+
+Remissão completa em 87% (era pré-rituximabe).
+
+
+### 2
+
+Risco alto-intermediário: sobrevida em 5 anos de 43%
+
+Remissão completa em 55%.
+
+
+### 3
+
+Risco baixo-intermediário: sobrevida em 5 anos de 51%
+
+Remissão completa em 67%.
+
+
+### 4
+
+Risco alto: sobrevida em 5 anos de 26%
+
+Remissão completa em 44%.
+

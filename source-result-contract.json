@@ -1,0 +1,229 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "ipi-linfoma",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "c76196fc9e27326a783bc79ed29828d2948a82ae",
+    "oldEngineSha256": "7bf0f83fed1b7c0d81ff4a0750aa02d4347df3c6e81ae3ee6351b9fe13f4495a",
+    "currentEngineSha256": "4153b72e06443d7d439e27c196c95c5949a464ad50afe1a7ec045040b09f87f2"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "55 anos, estádio II, LDH normal: 0 ponto",
+      "input": {
+        "idade": false,
+        "ldh": false,
+        "ecog": false,
+        "estadio": false,
+        "extranodal": false
+      },
+      "publicOutput": {
+        "id": "ipi-linfoma",
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "IPI",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "IPI",
+        "level": "low",
+        "verdict": "Risco baixo: sobrevida em 5 anos de 73%",
+        "note": "Remissão completa em 87% (era pré-rituximabe).",
+        "raw": {
+          "score": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "70 anos, estádio IV, LDH alta: 3 pontos",
+      "input": {
+        "idade": true,
+        "estadio": true,
+        "ldh": true,
+        "ecog": false,
+        "extranodal": false
+      },
+      "publicOutput": {
+        "id": "ipi-linfoma",
+        "main": [
+          "3",
+          "pontos"
+        ],
+        "label": "IPI",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3,
+        "level": "high",
+        "verdict": "alto-intermediário"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "pontos"
+        ],
+        "label": "IPI",
+        "level": "high",
+        "verdict": "Risco alto-intermediário: sobrevida em 5 anos de 43%",
+        "note": "Remissão completa em 55%.",
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "LDH alta e estádio III: 2 pontos",
+      "input": {
+        "ldh": true,
+        "estadio": true,
+        "idade": false,
+        "ecog": false,
+        "extranodal": false
+      },
+      "publicOutput": {
+        "id": "ipi-linfoma",
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "IPI",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "IPI",
+        "level": "mid",
+        "verdict": "Risco baixo-intermediário: sobrevida em 5 anos de 51%",
+        "note": "Remissão completa em 67%.",
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Todos os fatores: 5 pontos",
+      "input": {
+        "idade": true,
+        "ldh": true,
+        "ecog": true,
+        "estadio": true,
+        "extranodal": true
+      },
+      "publicOutput": {
+        "id": "ipi-linfoma",
+        "main": [
+          "5",
+          "pontos"
+        ],
+        "label": "IPI",
+        "raw": {
+          "score": 5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 5,
+        "verdict": "Risco alto"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "pontos"
+        ],
+        "label": "IPI",
+        "level": "high",
+        "verdict": "Risco alto: sobrevida em 5 anos de 26%",
+        "note": "Remissão completa em 44%.",
+        "raw": {
+          "score": 5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

@@ -71,3 +71,35 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Niedriges Risiko: 5-Jahres-Überleben von 73%
+
+Komplette Remission in 87% (prä-Rituximab-Ära).
+
+
+### 2
+
+Hohes intermediäres Risiko: 5-Jahres-Überleben von 43%
+
+Komplette Remission in 55%.
+
+
+### 3
+
+Niedriges intermediäres Risiko: 5-Jahres-Überleben von 51%
+
+Komplette Remission in 67%.
+
+
+### 4
+
+Hohes Risiko: 5-Jahres-Überleben von 26%
+
+Komplette Remission in 44%.
+
